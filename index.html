@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM MACHINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="/atmm.jpg" type="image/x-icon">
+    <style>
+        table,td,th {
+            /* border: 5px solid; */
+            text-align: center;
+            border-collapse: collapse;
+            /* background-color: orange; */
+            /* border-style:; */
+        }
+        td{
+            height: 120px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 waw">
+        <h1 class="mb-4 text-white fw-bold text-center m-auto mt-5">ATM MACHINE</h1>
+            <div class="m-auto text-center border-0 shadow-lg mt-5 w-50 rounded-end">
+                <table class="text-center m-auto">
+                    <tr>
+                        <td>
+                            <button class="btn btn-light btn-lg" onclick="withdraw()">WITHDRAW</button>
+                        </td>
+                        <td rowspan="4">
+                            <div id="topScreen">
+        
+                            </div>
+                            <input type="text" class="mt-3 spic fs-3 fw-bold" id="userInput" style="height: 45px;" placeholder="Input Amount">
+                        </td>
+                        <td>
+                            <button class="btn btn-light p-3 btn-lg">TRANSFER</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-light btn-lg">PAY BILLS</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-light p-3 btn-lg" onclick="deposit()">DEPOSIT</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-light btn-lg">AIRTIME</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-light btn-lg">OTHERS</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-light p-3 btn-lg" onclick="checkBalance()">CHECK BILLS</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-light btn-lg">EXTRA</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

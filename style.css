@@ -1,0 +1,8 @@
+body{
+    background-image: url('atmmm.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+::placeholder{
+    margin-left: 20px;
+}
